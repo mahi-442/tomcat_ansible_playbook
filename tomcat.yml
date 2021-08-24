@@ -37,6 +37,7 @@
             file:
                     path: /opt/{{ tomcat_file }}
                     state: absent
+
           - name: start the tomcat server
             shell: nohup /opt/tomcat8/bin/startup.sh &
 
